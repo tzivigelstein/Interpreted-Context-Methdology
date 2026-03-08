@@ -1,4 +1,4 @@
-# Interpretable Context Methdolog (ICM)
+# Interpretable Context Methdology (ICM)
 
 Folder structure as agent architecture.
 
