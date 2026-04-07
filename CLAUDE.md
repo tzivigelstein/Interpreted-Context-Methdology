@@ -16,6 +16,8 @@ model-workspace-protocol/
 └── workspaces/
     ├── script-to-animation/           (content idea -> animated video)
     ├── course-deck-production/        (unstructured material -> course PowerPoints)
+    ├── release-notes/                 (git history -> user-facing changelog)
+    ├── tutorials/                     (feature -> blog post and/or video script)
     └── workspace-builder/             (builds new MWP workspaces)
 ```
 
@@ -25,6 +27,8 @@ model-workspace-protocol/
 |-----------------|-------|
 | Create content with script-to-animation | `workspaces/script-to-animation/CLAUDE.md` |
 | Build course slide decks from source material | `workspaces/course-deck-production/CLAUDE.md` |
+| Generate release notes from any git repo | `workspaces/release-notes/CLAUDE.md` |
+| Write a tutorial about any project feature | `workspaces/tutorials/CLAUDE.md` |
 | Build a new workspace for any domain | `workspaces/workspace-builder/CLAUDE.md` |
 | Read the full MWP specification | `_core/CONVENTIONS.md` |
 | Understand the placeholder system | `_core/placeholder-syntax.md` |
