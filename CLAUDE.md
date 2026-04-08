@@ -18,6 +18,7 @@ model-workspace-protocol/
     ├── course-deck-production/        (unstructured material -> course PowerPoints)
     ├── release-notes/                 (git history -> user-facing changelog)
     ├── tutorials/                     (feature -> blog post and/or video script)
+    ├── marketing-video/               (product -> conversion-focused marketing video, Hormozi-based)
     └── workspace-builder/             (builds new MWP workspaces)
 ```
 
@@ -29,6 +30,7 @@ model-workspace-protocol/
 | Build course slide decks from source material | `workspaces/course-deck-production/CLAUDE.md` |
 | Generate release notes from any git repo | `workspaces/release-notes/CLAUDE.md` |
 | Write a tutorial about any project feature | `workspaces/tutorials/CLAUDE.md` |
+| Build a marketing video for any product (Hormozi method) | `workspaces/marketing-video/CLAUDE.md` |
 | Build a new workspace for any domain | `workspaces/workspace-builder/CLAUDE.md` |
 | Read the full MWP specification | `_core/CONVENTIONS.md` |
 | Understand the placeholder system | `_core/placeholder-syntax.md` |
