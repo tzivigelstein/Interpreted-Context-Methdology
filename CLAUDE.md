@@ -19,6 +19,7 @@ model-workspace-protocol/
     ├── release-notes/                 (git history -> user-facing changelog)
     ├── tutorials/                     (feature -> blog post and/or video script)
     ├── marketing-video/               (product -> conversion-focused marketing video, Hormozi-based)
+    ├── feature-pipeline/              (brief -> design -> implement -> review for any external repo)
     └── workspace-builder/             (builds new MWP workspaces)
 ```
 
@@ -31,6 +32,7 @@ model-workspace-protocol/
 | Generate release notes from any git repo | `workspaces/release-notes/CLAUDE.md` |
 | Write a tutorial about any project feature | `workspaces/tutorials/CLAUDE.md` |
 | Build a marketing video for any product (Hormozi method) | `workspaces/marketing-video/CLAUDE.md` |
+| Run a feature pipeline (brief -> design -> implement -> review) on any external repo | `workspaces/feature-pipeline/CLAUDE.md` |
 | Build a new workspace for any domain | `workspaces/workspace-builder/CLAUDE.md` |
 | Read the full MWP specification | `_core/CONVENTIONS.md` |
 | Understand the placeholder system | `_core/placeholder-syntax.md` |
