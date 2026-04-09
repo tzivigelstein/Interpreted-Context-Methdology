@@ -14,9 +14,13 @@ feature-pipeline/
 │   ├── 03-implement/                  (Builder executes the spec)
 │   └── 04-review/                     (Architect reviews the diff and writes debt)
 └── shared/
-    ├── conventions.md                 (target repo detection, slug naming)
-    └── stack-and-rules-detection.md   (how to read any repo's stack and rules)
+    └── conventions.md                 (slug naming and when slugs change)
 ```
+
+Cross-workspace techniques live in `/_core/`:
+
+- `/_core/target-repo-detection.md` - identify which external repo a feature belongs to
+- `/_core/stack-and-rules-detection.md` - read any target repo's stack and project rules
 
 ## Triggers
 
@@ -37,10 +41,10 @@ feature-pipeline/
 
 | Task | Load These | Do NOT Load |
 |------|-----------|-------------|
-| Writing a brief | `stages/01-brief/CONTEXT.md`, `shared/conventions.md` | Other stage CONTEXT.md, design protocol |
-| Designing a spec | `stages/02-design/CONTEXT.md`, `stages/02-design/references/design-protocol.md`, `shared/stack-and-rules-detection.md`, `shared/conventions.md`, the brief | Implementation rules, review protocol |
-| Implementing a spec | `stages/03-implement/CONTEXT.md`, `stages/03-implement/references/implementation-rules.md`, the spec, the target repo's project rules | Brief, design protocol, review protocol |
-| Reviewing changes | `stages/04-review/CONTEXT.md`, `stages/04-review/references/review-protocol.md`, the spec, the implementation summary, the diff, the target repo's project rules | Brief, design protocol, implementation rules |
+| Writing a brief | `stages/01-brief/CONTEXT.md`, `/_core/target-repo-detection.md`, `shared/conventions.md` | Other stage CONTEXT.md, design protocol |
+| Designing a spec | `stages/02-design/CONTEXT.md`, `stages/02-design/references/design-protocol.md`, `/_core/stack-and-rules-detection.md`, `/_core/target-repo-detection.md`, `shared/conventions.md`, the brief | Implementation rules, review protocol |
+| Implementing a spec | `stages/03-implement/CONTEXT.md`, `stages/03-implement/references/implementation-rules.md`, `/_core/stack-and-rules-detection.md`, the spec, the target repo's project rules | Brief, design protocol, review protocol |
+| Reviewing changes | `stages/04-review/CONTEXT.md`, `stages/04-review/references/review-protocol.md`, `/_core/stack-and-rules-detection.md`, the spec, the implementation summary, the diff, the target repo's project rules | Brief, design protocol, implementation rules |
 
 ## Stage Handoffs
 

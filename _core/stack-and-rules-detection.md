@@ -1,6 +1,6 @@
 # Stack and Rules Detection
 
-How agents in any stage figure out what stack a target repo uses and where its project rules live. Run this every session. Never bake the result into a file.
+How any workspace's agents figure out what stack a target repo uses and where its project rules live. Run this every session. Never bake the result into a file.
 
 ## Stack Detection
 
@@ -39,4 +39,4 @@ If no rules are found anywhere, ask the user: "I did not find a CLAUDE.md, AGENT
 
 ## Why Detection Runs Every Session
 
-The original CLI baked detection results into a static `DESIGN.md` at init time. When the stack changed (new framework added, rules moved, project conventions edited), the doc lied silently. Detecting per-session means the agent always has current information and there is no doc to keep in sync.
+Agents in earlier versions of cross-repo workspaces baked detection results into static protocol files at init time. When the stack changed (new framework added, rules moved, project conventions edited), the doc lied silently. Detecting per-session means the agent always has current information and there is no doc to keep in sync.

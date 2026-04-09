@@ -9,7 +9,7 @@ Audit the implementation against the spec, the project rules, and general qualit
 | Spec | `../02-design/output/<repo>/<slug>-spec.md` | Full file | Contract to verify against |
 | Implementation summary | `../03-implement/output/<repo>/<slug>-implementation-summary.md` | Full file | Where to look, what was decided |
 | Review protocol | `references/review-protocol.md` | Full file | Behavior, output structure for review and debt |
-| Stack and rules detection | `../../shared/stack-and-rules-detection.md` | Full file | How to find the target repo's project rules |
+| Stack and rules detection | `/_core/stack-and-rules-detection.md` | Full file | How to find the target repo's project rules |
 | Target repo | `git diff --staged` or `git diff` if nothing is staged | The actual changes | Source of truth for what was done |
 
 ## Process

@@ -19,7 +19,7 @@ The split is intentional. When the same model designs and implements, specs drif
 
 Before entering any stage, the agent must know:
 
-1. **Target repo**: which external repo the feature is for. See `shared/conventions.md` "Target Repo Detection".
+1. **Target repo**: which external repo the feature is for. See `/_core/target-repo-detection.md`.
 2. **Feature slug**: a kebab-case identifier. Provisional in stage 01, normalized in stage 02. See `shared/conventions.md` "Slug Naming".
 
 ## Stage Entry Points
@@ -43,5 +43,6 @@ Linear per feature. Skipping a stage is allowed only when the user provides the 
 
 | Resource | Location | Contains |
 |----------|----------|----------|
-| Conventions | `shared/conventions.md` | Target-repo detection, slug naming, when slugs change |
-| Stack and rules detection | `shared/stack-and-rules-detection.md` | How to read any target repo's stack and project rules at runtime |
+| Slug naming | `shared/conventions.md` | Slug rules and when slugs change |
+| Target repo detection | `/_core/target-repo-detection.md` | How to identify the target repo from cwd |
+| Stack and rules detection | `/_core/stack-and-rules-detection.md` | How to read any target repo's stack and project rules at runtime |

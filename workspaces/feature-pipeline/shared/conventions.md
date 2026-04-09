@@ -1,19 +1,6 @@
-# Conventions
+# Slug Conventions
 
-Cross-stage conventions for this workspace.
-
-## Target Repo Detection
-
-The pipeline operates on EXTERNAL repos. The agent must know which repo a feature belongs to before reading or writing any artifact.
-
-Detection logic:
-
-1. Run `git rev-parse --show-toplevel` from the current working directory.
-2. If the result is the icm repo itself (this workspace's home), the cwd is icm. The agent does NOT yet know the target. Ask the user: "which repo is this feature for?" and accept either a repo name or an absolute path.
-3. Otherwise, the result is the target repo. The basename of that path is `<repo>` for all output paths in this workspace. Example: `/home/tzivigelstein/codes/ac-hub` -> `<repo>` is `ac-hub`.
-4. If the cwd is not inside any git repo, ask the user explicitly. Do not guess.
-
-The `<repo>` value is used as a subfolder in every stage's `output/` so that artifacts from different repos do not collide.
+Slug naming for features and when the slug may change.
 
 ## Slug Naming
 

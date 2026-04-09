@@ -8,8 +8,8 @@ Turn a brief into a spec detailed enough that an implementation agent can execut
 |--------|--------------|---------------|-----|
 | Brief | `../01-brief/output/<repo>/<slug>-brief.md` | Full file | What the user wants |
 | Design protocol | `references/design-protocol.md` | Full file | Behavior, phases, scope philosophy, spec structure |
-| Stack and rules detection | `../../shared/stack-and-rules-detection.md` | Full file | How to identify the target repo's stack and project rules |
-| Conventions | `../../shared/conventions.md` | "Slug Naming" and "When the Slug Changes" sections | How to rename the brief during phase 1 |
+| Stack and rules detection | `/_core/stack-and-rules-detection.md` | Full file | How to identify the target repo's stack and project rules |
+| Slug conventions | `../../shared/conventions.md` | "Slug Naming" and "When the Slug Changes" sections | How to rename the brief during phase 1 |
 | Target repo | `git rev-parse --show-toplevel` of the cwd, or as set during target detection | The files the agent investigates | Source of truth for the code being changed |
 
 ## Process

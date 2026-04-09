@@ -8,7 +8,7 @@ Execute the spec. No re-design, no scope changes. If the spec is wrong or ambigu
 |--------|--------------|---------------|-----|
 | Spec | `../02-design/output/<repo>/<slug>-spec.md` | Full file | Contract to execute |
 | Implementation rules | `references/implementation-rules.md` | Full file | How to write the code, what to clean up, what to verify |
-| Stack and rules detection | `../../shared/stack-and-rules-detection.md` | Full file | How to find the target repo's project rules |
+| Stack and rules detection | `/_core/stack-and-rules-detection.md` | Full file | How to find the target repo's project rules |
 | Target repo | `git rev-parse --show-toplevel` of cwd or as set during target detection | The files the spec touches, plus tests | Where the changes go |
 
 ## Process

@@ -8,11 +8,12 @@ Capture a feature idea before any analysis. The brief is raw user input. The age
 |--------|--------------|---------------|-----|
 | User | Conversation | A description of what they want and why | Source material |
 | Brief template | `references/brief-template.md` | Full file | Structure to populate |
-| Conventions | `../../shared/conventions.md` | "Target Repo Detection" and "Slug Naming" sections | Where to write, how to name |
+| Target repo detection | `/_core/target-repo-detection.md` | Full file | Identify which repo this feature belongs to |
+| Slug conventions | `../../shared/conventions.md` | "Slug Naming" section | How to name the brief file |
 
 ## Process
 
-1. Identify the target repo. Follow "Target Repo Detection" in conventions.
+1. Identify the target repo. Follow `/_core/target-repo-detection.md`.
 2. Ask the user what they want to do, why, and any constraints they already know about. Use their own words. Do not investigate the codebase. Do not propose scope. The brief is raw input.
 3. Pick an initial slug. If the user proposed a name, slugify it. Otherwise generate a rough one from their description. The slug may be in any language. It is provisional. Stage 02 will normalize it.
 4. Populate `references/brief-template.md` with the user's answers. Leave any field empty rather than fabricating content.
