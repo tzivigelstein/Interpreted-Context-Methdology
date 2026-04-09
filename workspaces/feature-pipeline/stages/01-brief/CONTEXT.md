@@ -1,6 +1,8 @@
-# Stage 01 - Brief
+# Stage 01 - Brief (Optional)
 
 Capture a feature idea before any analysis. The brief is raw user input. The agent's job here is to format and store, not to investigate or judge.
+
+> **This stage is optional.** Most users enter the pipeline at stage 02 directly, which captures the brief inline. Use this stage only when you want to batch-capture multiple feature ideas without entering design for any of them.
 
 ## Inputs
 

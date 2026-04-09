@@ -1,12 +1,15 @@
 # Stage 02 - Design
 
-Turn a brief into a spec detailed enough that an implementation agent can execute without follow-up questions. This is the most critical stage. Do it slowly.
+Turn a feature idea into a spec detailed enough that an implementation agent can execute without follow-up questions. This is the most critical stage. Do it slowly.
+
+This stage can be entered directly — a prior brief from stage 01 is not required. If the user describes what they want in conversation, capture it as a brief inline (see Phase 0 in the design protocol).
 
 ## Inputs
 
 | Source | File/Location | Section/Scope | Why |
 |--------|--------------|---------------|-----|
-| Brief | `../01-brief/output/<repo>/<slug>-brief.md` | Full file | What the user wants |
+| Brief (if exists) | `../01-brief/output/<repo>/<slug>-brief.md` | Full file | What the user wants (optional — can be captured inline) |
+| Brief template | `../01-brief/references/brief-template.md` | Full file | Structure for inline capture when no prior brief exists |
 | Design protocol | `references/design-protocol.md` | Full file | Behavior, phases, scope philosophy, spec structure |
 | Stack and rules detection | `/_core/stack-and-rules-detection.md` | Full file | How to identify the target repo's stack and project rules |
 | Slug conventions | `../../shared/conventions.md` | "Slug Naming" and "When the Slug Changes" sections | How to rename the brief during phase 1 |
@@ -14,7 +17,7 @@ Turn a brief into a spec detailed enough that an implementation agent can execut
 
 ## Process
 
-1. Read the brief.
+1. If a brief already exists, read it. If not, run Phase 0 from the design protocol: capture the user's intent, write the brief, then continue.
 2. Run stack and rules detection on the target repo. Read every project rule found before asking any question.
 3. Phase 1 (Discovery): rename the slug to clean English if needed, investigate the codebase, ask the user PO-level questions. Full rules in `references/design-protocol.md`.
 4. Wait for the user's explicit approval before writing the spec. If you are unsure whether they approved, ask "should I write the spec now?".

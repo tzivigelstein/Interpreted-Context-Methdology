@@ -44,5 +44,10 @@ Linear per audit. Skipping a stage is allowed only when the user provides the up
 | Borders | `shared/borders.md` | Definition of a border + checklist of common border types |
 | What not to report | `shared/what-not-to-report.md` | Exclusions: style, impossible states, performance without evidence |
 | Audit conventions | `shared/audit-conventions.md` | Audit slug naming |
+| Project-specific examples | `shared/examples/<repo>.md` | Real broken-assumption examples from prior audits of this repo (optional, created after first audit) |
 | Target repo detection | `/_core/target-repo-detection.md` | Identify which external repo |
 | Stack and rules detection | `/_core/stack-and-rules-detection.md` | Read the target repo's stack and project rules |
+
+## Project-Specific Examples
+
+After completing an audit on a repo, save the most instructive findings (confirmed bugs where a broken assumption caused real impact) to `shared/examples/<repo>.md`. These examples ground future audits on the same repo with concrete patterns instead of generic instructions. Format: one section per example with the broken assumption, what actually happened, and the category (source of truth, input format, operation order, data completeness).

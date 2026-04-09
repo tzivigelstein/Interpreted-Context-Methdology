@@ -29,11 +29,12 @@ If no markers are found, report "Unknown" and ask the user.
 
 Look for these in the target repo, in order:
 
-1. **Folders**: `.cursor/rules/`, `.claude/rules/`, `docs/`. Include only if the folder is non-empty.
+1. **Rule directories**: `.cursor/rules/`, `.claude/rules/`, `docs/`. Include only if the folder is non-empty.
 2. **Top-level files**: `CLAUDE.md`, `AGENTS.md`, `CONVENTIONS.md`. Include only if the file exists.
-3. **Domain-level files**: `app/domain/*.md`, `src/domain/*.md`. Include any markdown found in these locations.
+3. **Nested CLAUDE.md and AGENTS.md**: search recursively for `**/CLAUDE.md` and `**/AGENTS.md` within the repo's source directories (e.g., `app/`, `src/`, `lib/`, `packages/`). These often contain layer-specific glossaries, flow maps, or design policies. Exclude `node_modules/`, `.git/`, `vendor/`, and build output directories.
+4. **Workflow protocols**: `.workflow/DESIGN.md`, `.workflow/REVIEW.md`, `.workflow/ADVERSARIAL_AUDIT.md`. Include if they exist — these contain project-specific workflow rules that may override or extend generic ICM protocols.
 
-Build a list of every rules location found. Read every file in the list before doing your stage's main work. Internalize the rules.
+Build a list of every rules location found. Read every file in the list before doing your stage's main work. Internalize the rules. If a nested CLAUDE.md or AGENTS.md is a pointer to another file (e.g., "read `.cursor/rules/25-domain-object-design.mdc`"), follow the pointer — do not read the same content twice.
 
 If no rules are found anywhere, ask the user: "I did not find a CLAUDE.md, AGENTS.md, .cursor/rules/, or similar. Do you have project conventions written somewhere I should read?".
 

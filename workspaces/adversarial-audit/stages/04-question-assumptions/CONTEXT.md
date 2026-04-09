@@ -8,6 +8,7 @@ For each traced flow, apply the 4 questions to find broken assumptions. Generate
 |--------|--------------|---------------|-----|
 | Traces | `../03-trace-flows/output/<repo>/<audit-slug>-traces.md` | Full file | The flows to question |
 | Four questions | `references/four-questions.md` | Full file | The 4 categories of broken assumptions |
+| Project examples (if exist) | `../../shared/examples/<repo>.md` | Full file | Real broken-assumption examples from prior audits — use as calibration for hypothesis quality |
 
 ## Process
 
